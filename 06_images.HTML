@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/32244187/pexels-photo-32244187.jpeg?_gl=1*13rqqtw*_ga*MjA5NjE0NzA0NC4xNzUzMzU3ODYw*_ga_8JE65Q40S6*czE3NTMzNjA4NDgkbzIkZzEkdDE3NTMzNjEwMDQkajIyJGwwJGgw" alt="no image" width="250px" >
+
+    <img src="./07_html.png" alt="insert image" width="250px">
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="./h.png" />
+        <source media="(min-width: 440px)" srcset="./html2.png" />
+
+        <img src="./07_htm.png" alt="no image" width="250px">
+
+    </picture>
+    <img src="./07_html.png" usemap="#image-map"  width="500px">
+
+    
+    <!-- an image map generator -->
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="1360,1047,504,1772" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="2832,1762,1971,2788" shape="rect">
+</map>
+<script>
+    function one() {
+        alert("you clicked on one")
+    }
+    function two() {
+        alert("you clicked on two")
+    }
+</script>
+</body>
+</html>
